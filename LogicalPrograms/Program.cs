@@ -6,7 +6,7 @@
         {
             Console.WriteLine("-------------------------Welcome To Logical Programs------------------------");
             bool end = true;
-            Console.WriteLine("n1. Fibbonacci Series \n2. Perfect Number \n3. End of the program");
+            Console.WriteLine("n1. Fibbonacci Series \n2. Perfect Number \n3. Prime Number \n4. End of the program");
             while (end==true)
             {
                 Console.WriteLine("Enter the option to execute the program ");
@@ -22,6 +22,10 @@
                         perfectNumber.pnumber();
                         break;
                     case 3:
+                        PrimeNumber primeNumber = new PrimeNumber();
+                        primeNumber.number();
+                        break ;
+                    case 4:
                         end = false;
                         break;
                     default: Console.WriteLine("Enter the proper option to execute");
