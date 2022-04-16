@@ -6,7 +6,7 @@
         {
             Console.WriteLine("-------------------------Welcome To Logical Programs------------------------");
             bool end = true;
-            Console.WriteLine("n1. Fibbonacci Series \n2. Perfect Number \n3. Prime Number \n4. Reverse A Number \n5. End of the program");
+            Console.WriteLine("n1. Fibbonacci Series \n2. Perfect Number \n3. Prime Number \n4. Reverse A Number \n5. Day Of The Week \n6. End of the program");
             while (end==true)
             {
                 Console.WriteLine("Enter the option to execute the program ");
@@ -30,6 +30,11 @@
                         reverseOfNumber.reverse();
                         break;
                     case 5:
+                        DayOfWeek dayOfWeek = new DayOfWeek();
+                        dayOfWeek.weekday();
+                        break;
+
+                    case 6:
                         end = false;
                         break;
                     default: Console.WriteLine("Enter the proper option to execute");
