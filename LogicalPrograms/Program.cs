@@ -6,7 +6,7 @@
         {
             Console.WriteLine("-------------------------Welcome To Logical Programs------------------------");
             bool end = true;
-            Console.WriteLine("n1. Fibbonacci Series \n2. Perfect Number \n3. Prime Number \n4. Reverse A Number \n5. Day Of The Week \n6. Vending Machine \n7.End of the program");
+            Console.WriteLine("n1. Fibbonacci Series \n2. Perfect Number \n3. Prime Number \n4. Reverse A Number \n5. Day Of The Week \n6. Vending Machine \n7. Temperature Conversion \n8. End of the program");
             while (end==true)
             {
                 Console.WriteLine("Enter the option to execute the program ");
@@ -37,9 +37,14 @@
                         VendingMachine vendingMachine= new VendingMachine();
                         vendingMachine.notes();
                         break;
-
-
                     case 7:
+                        Temperature temperature= new Temperature();
+                        temperature.CelToFaren();
+                        temperature.FerenToCel();
+                        break;
+
+
+                    case 8:
                         end = false;
                         break;
                     default: Console.WriteLine("Enter the proper option to execute");
