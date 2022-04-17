@@ -6,7 +6,7 @@
         {
             Console.WriteLine("-------------------------Welcome To Logical Programs------------------------");
             bool end = true;
-            Console.WriteLine("n1. Fibbonacci Series \n2. Perfect Number \n3. Prime Number \n4. Reverse A Number \n5. Day Of The Week \n6. Vending Machine \n7. Temperature Conversion \n8. Monthly Payment \n9. End of the program");
+            Console.WriteLine("n1. Fibbonacci Series \n2. Perfect Number \n3. Prime Number \n4. Reverse A Number \n5. Day Of The Week \n6. Vending Machine \n7. Temperature Conversion \n8. Monthly Payment \n9. Coupon Number \n10. End of the program");
             while (end==true)
             {
                 Console.WriteLine("Enter the option to execute the program ");
@@ -46,10 +46,15 @@
                         MonthlyPayment monthlyPayment = new MonthlyPayment();
                         monthlyPayment.monthlypay();
                         break;
-
-
-
                     case 9:
+                        CouponNumber couponNumber = new CouponNumber(); 
+                        couponNumber.Coupon();
+                        break;
+
+
+
+
+                    case 10:
                         end = false;
                         break;
                     default: Console.WriteLine("Enter the proper option to execute");
